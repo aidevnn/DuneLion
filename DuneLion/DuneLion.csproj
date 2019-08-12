@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{ADD36004-0E0F-4B97-840B-7E3BAE054B23}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DuneLion</RootNamespace>
+    <AssemblyName>DuneLion</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activations\BaseActivation.cs" />
+    <Compile Include="Activations\SigmoidActivation.cs" />
+    <Compile Include="Activations\TanhActivation.cs" />
+    <Compile Include="Optimizers\BaseOptimizer.cs" />
+    <Compile Include="Optimizers\SGD.cs" />
+    <Compile Include="Losses\BaseLoss.cs" />
+    <Compile Include="Losses\SquareLoss.cs" />
+    <Compile Include="Layers\BaseLayer.cs" />
+    <Compile Include="Layers\LayerActivation.cs" />
+    <Compile Include="Layers\DenseLayer.cs" />
+    <Compile Include="Network.cs" />
+    <Compile Include="Accuracies\BaseAccuracy.cs" />
+    <Compile Include="Accuracies\RoundAccuracy.cs" />
+    <Compile Include="Accuracies\ArgmaxAccuracy.cs" />
+    <Compile Include="ImportData.cs" />
+    <Compile Include="Losses\CrossEntropyLoss.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDarrayLib\NDarrayLib.csproj">
+      <Project>{B219FC72-E2C4-4C06-A1DB-0D5F34ABB135}</Project>
+      <Name>NDarrayLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activations\" />
+    <Folder Include="Optimizers\" />
+    <Folder Include="Losses\" />
+    <Folder Include="Layers\" />
+    <Folder Include="datasets\" />
+    <Folder Include="Accuracies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="datasets\digits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="datasets\iris.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

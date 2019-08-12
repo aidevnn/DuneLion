@@ -1,0 +1,8 @@
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/bin/Release/datasets/digits.csv
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/bin/Release/datasets/iris.csv
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/bin/Release/DuneLion.exe
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/bin/Release/NDarrayLib.dll
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/obj/x86/Release/DuneLion.csprojAssemblyReference.cache
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/obj/x86/Release/DuneLion.csproj.CoreCompileInputs.cache
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/obj/x86/Release/DuneLion.csproj.CopyComplete
+/home/ilyas/ProjectsCSharp/DuneLion/DuneLion/obj/x86/Release/DuneLion.exe
