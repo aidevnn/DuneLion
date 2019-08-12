@@ -1,3 +1,0 @@
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/bin/Release/NDarrayLib.dll
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/obj/Release/NDarrayLib.csproj.CoreCompileInputs.cache
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/obj/Release/NDarrayLib.dll

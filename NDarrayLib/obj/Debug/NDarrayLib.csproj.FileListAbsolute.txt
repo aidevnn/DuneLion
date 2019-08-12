@@ -1,5 +1,0 @@
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/bin/Debug/NDarrayLib.dll
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/bin/Debug/NDarrayLib.pdb
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/obj/Debug/NDarrayLib.csproj.CoreCompileInputs.cache
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/obj/Debug/NDarrayLib.dll
-/home/ilyas/ProjectsCSharp/DuneLion/NDarrayLib/obj/Debug/NDarrayLib.pdb
